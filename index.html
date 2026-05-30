@@ -56,7 +56,7 @@
         "url": "https://www.radio-uncensored.com"
       },
       "datePublished": "2026-05-01",
-      "dateModified": "2026-05-01",
+      "dateModified": "2026-05-30",
       "mainEntityOfPage": {
         "@type": "WebPage",
         "@id": "https://www.radio-uncensored.com/"
@@ -230,7 +230,7 @@
 
     .hero img {
         width: 100%;
-        height: auto%;
+        height: auto;
         display: block;
     }
 
@@ -783,7 +783,8 @@
             padding: 8px 20px 0;
         }
         .censorship-split { grid-template-columns: 1fr; }
-.censorship-split-image { min-height: 260px; }
+.censorship-split-image { display: none; }
+.censorship-split-text { grid-column: 1 / -1; }
     }
 
     @media (max-width: 500px) {
@@ -871,7 +872,7 @@
 
     <!-- MASTHEAD -->
     <header class="masthead">
-        <a class="masthead-logo" href="#">radio-uncensored.com</a>
+        <a class="masthead-logo" href="https://www.radio-uncensored.com/">radio-uncensored.com</a>
     </header>
 
     <!-- ══════════════════════════════════════════════════════════
@@ -899,9 +900,9 @@
         <!-- BOTTOM: full width remainder -->
         <div class="censorship-body">
             <p>You might agree with the RSGB if you're the type who wears socks with sandals—but most amateur radio operators see this as a great opportunity, made possible by FediEA and the Spanish licensing authorities.</p>
-            <p>To be clear, your ham radio license is issued by Ofcom, not the RSGB. In Spain, temporary operating permits are granted by local district authorities on behalf of the national authority. A sovereign nation's decision to permit non-HAREC hams to operate within its borders is admirable. The RSGB have no jurisdiction.</p>
+            <p>To be clear, your ham radio licence is issued by Ofcom, not the RSGB. In Spain, temporary operating permits are granted by local district authorities on behalf of the national authority. A sovereign nation's decision to permit non-HAREC hams to operate within its borders is admirable. The RSGB have no jurisdiction.</p>
             <p>Think of it like this: you can apply for a temporary driving permit abroad, but imagine the RAC hides this from you (because of their political agenda)—even though it's none of their business.</p>
-            <p>That's why I've chosen to publish this article on a dedicated website—because Foundation and Intermediate license holders absolutely have the right to apply for a temporary operating permit in Spain.</p>
+            <p>That's why I've chosen to publish this article on a dedicated website—because Foundation and Intermediate licence holders absolutely have the right to apply for a temporary operating permit in Spain.</p>
             <a href="legal.html" class="censorship-cta">
                 <span class="censorship-cta-label">Legal Confirmation</span>
                 <span class="censorship-cta-title">FediEA Confirms: Article 15 Applies to UK Foundation &amp; Intermediate Licensees</span>
@@ -948,7 +949,7 @@
                     <p>
                         For years, many UK amateurs have believed that overseas 
                         <em>holiday operating</em>
-                         is only possible with a Full licence under CEPT T/R 6101. That assumption is widespread — and completely wrong when it comes to Spain.
+                         is only possible with a Full licence under CEPT T/R 61-01. That assumption is widespread — and completely wrong when it comes to Spain.
                     </p>
                     <p>
                         While Foundation and Intermediate licences aren't recognised under CEPT, there 
