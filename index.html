@@ -216,38 +216,6 @@
         font-style: normal;
     }
 
-    .censorship-headline {
-        display: block;
-        margin-bottom: 28px;
-        line-height: 0.88;
-    }
-    .censorship-headline .scrap,
-    .censorship-headline .vs {
-        display: inline-block;
-    }
-    .censorship-headline .scrap {
-        font-family: 'Bebas Neue', sans-serif;
-        font-weight: 400;
-        line-height: 0.9;
-        letter-spacing: .01em;
-        font-size: clamp(52px, 8vw, 96px);
-        transform: rotate(var(--r));
-    }
-    .censorship-headline .scrap--a { --r: -3deg; color: var(--paper); filter: url(#torn) drop-shadow(0 5px 9px rgba(0,0,0,.5)); }
-    .censorship-headline .scrap--b { --r: 2.5deg; color: var(--accent); filter: url(#torn2) drop-shadow(0 5px 9px rgba(0,0,0,.5)); white-space: nowrap; }
-    .censorship-headline .vs {
-        font-family: 'Space Mono', monospace;
-        font-weight: 700;
-        font-style: italic;
-        font-size: clamp(38px, 6vw, 68px);
-        letter-spacing: .01em;
-        color: var(--accent);
-        transform: translate(2.4ch, -0.22em) rotate(-7deg);
-        text-shadow: 0 0 22px rgba(200, 66, 10, .4);
-        filter: url(#torn2) drop-shadow(0 5px 9px rgba(0,0,0,.5));
-        margin: 0;
-    }
-
     .censorship-body {
         font-size: 16px;
         line-height: 1.75;
@@ -1026,17 +994,6 @@
     </style>
 </head>
 <body>
-<svg width="0" height="0" aria-hidden="true" focusable="false" style="position:absolute">
-  <filter id="torn" x="-15%" y="-25%" width="130%" height="150%">
-    <feTurbulence type="fractalNoise" baseFrequency="0.018 0.15" numOctaves="2" seed="4" result="n"/>
-    <feDisplacementMap in="SourceGraphic" in2="n" scale="9" xChannelSelector="R" yChannelSelector="G"/>
-  </filter>
-  <filter id="torn2" x="-15%" y="-25%" width="130%" height="150%">
-    <feTurbulence type="fractalNoise" baseFrequency="0.021 0.17" numOctaves="2" seed="11" result="n"/>
-    <feDisplacementMap in="SourceGraphic" in2="n" scale="8" xChannelSelector="R" yChannelSelector="G"/>
-  </filter>
-</svg>
-
     <!-- MASTHEAD -->
     <header class="masthead">
         <a class="masthead-logo" href="https://www.radio-uncensored.com/">radio-uncensored.com</a>
@@ -1048,11 +1005,7 @@
    <section class="censorship-banner">
     <div class="censorship-inner">
         <div class="censorship-eyebrow">Editorial Note</div>
-        <h2 class="censorship-headline">
-            <strong class="scrap scrap--a">POLITICS</strong><br>
-            <strong class="vs">VS</strong><br>
-            <strong class="scrap scrap--b">THE RULEBOOK</strong>
-        </h2>
+        <h2 class="censorship-headline">Withheld<br>by your own<br><em>society</em></h2>
 
         <!-- TOP: two-column — text left, image right -->
         <div class="censorship-split">
@@ -1070,7 +1023,7 @@
 
         <!-- BOTTOM: full width remainder -->
         <div class="censorship-body">
-            <p>Not inaccurate. Not unlawful. Just outside the <em>usual</em> path.</p>
+            <p>Not inaccurate. Not unlawful. Just outside the <em>usual</em> path of sitting a Full exam — <a href="logic.html" style="color: var(--accent); text-decoration: underline;">do portable operators really need to?</a></p>
             <p>But "standard" here is being measured against CEPT — the reciprocal arrangement that lets Full-licence holders operate abroad. CEPT sets out who <em>may</em> operate under its terms. It does not, and cannot, stop a sovereign country from admitting anyone else.</p>
             <p>Spain has done precisely that: under its own regulations, a UK Foundation or Intermediate holder can apply for a temporary authorisation to operate there — no Full licence, no HAREC. It is open, lawful, and Spain's to grant.</p>
             <p>No treaty had to be brokered; Spain simply decided to admit non-HAREC operators. A door you can open yourself needs no gatekeeper.</p>
