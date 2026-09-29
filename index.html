@@ -629,6 +629,30 @@
         text-decoration: underline;
     }
 
+    /* Article links: match the reference-list palette */
+    .body-text a {
+        color: var(--accent2);
+        text-decoration: underline;
+        text-decoration-color: var(--rule);
+        text-decoration-thickness: 1px;
+        text-underline-offset: 3px;
+        transition: text-decoration-color 0.15s ease;
+    }
+
+    .body-text a:hover {
+        text-decoration-color: var(--accent2);
+    }
+
+    /* Reference markers [n]: orange, like the list numbering */
+    .body-text a[href^="#ref-"] {
+        color: var(--accent);
+        text-decoration: none;
+    }
+
+    .body-text a[href^="#ref-"]:hover {
+        text-decoration: underline;
+    }
+
     .sidebar-callout {
         border: 2px solid var(--ink);
         padding: 24px;
