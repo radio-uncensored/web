@@ -232,6 +232,36 @@
         margin-bottom: 0;
     }
 
+    /* Editorial note: quiet inline links, so the legal CTA stays the main call to action */
+    .censorship-body a {
+        color: inherit;
+        text-decoration: underline;
+        text-decoration-style: dotted;
+        text-decoration-color: rgba(245, 242, 236, 0.4);
+        text-decoration-thickness: 1px;
+        text-underline-offset: 3px;
+        transition: color 0.15s ease, text-decoration-color 0.15s ease;
+    }
+
+    .censorship-body a:hover {
+        color: var(--paper);
+        text-decoration-color: var(--accent);
+    }
+
+    .censorship-body a.censorship-cta {
+        text-decoration: none;
+        transition: background 0.2s;
+    }
+
+    /* Emphasised word: bold + solid underline (not a link) */
+    .censorship-emph {
+        font-weight: 700;
+        color: var(--paper);
+        text-decoration: underline;
+        text-decoration-thickness: 2px;
+        text-underline-offset: 3px;
+    }
+
     .censorship-quote {
         border-left: 3px solid var(--accent);
         padding: 10px 0 10px 20px;
@@ -1034,10 +1064,10 @@
         <!-- TOP: two-column — text left, image right -->
         <div class="censorship-split">
             <div class="censorship-split-text">
-                <p>This article was due for publication in RadCom Basics (May 2026). I'd worked closely with one of the editors for weeks — text, photographs, maps, links and permissions all finalised. The only step left was to typeset it and send a proof for sign-off.</p>
-                <p>The proof never came. The RSGB pulled the article — and not because anything in it was wrong. The objection came from the Society's licensing people.</p>
+                <p>This article was due to appear in RadCom Basics in May 2026. I'd worked with one of its editors for weeks — text, photographs, maps, links and permissions all finalised. The only step left was typesetting and a proof for sign-off.</p>
+                <p>The proof never came. The RSGB pulled the article. No error of fact was cited. The objection came from the Society's licensing people.</p>
                 <div class="censorship-quote">
-                    The reason given was that it set out the route to operating overseas in a way that fell outside the "standard" channels.
+                    The reason given: it set out a route to operating overseas that didn't go through the "normal channels."
                 </div>
             </div>
             <div class="censorship-split-image">
@@ -1047,10 +1077,13 @@
 
         <!-- BOTTOM: full width remainder -->
         <div class="censorship-body">
-            <p>Not inaccurate. Not unlawful. Just outside the <em>usual</em> path of sitting a Full exam.</p>
-            <p>But "standard" here is being measured against CEPT — the reciprocal arrangement that lets Full-licence holders operate abroad. CEPT sets out who <em>may</em> operate under its terms. It does not, and cannot, stop a sovereign country from admitting anyone else.</p>
-            <p>Spain has done precisely that: under its own regulations, a UK Foundation or Intermediate holder can apply for a temporary authorisation to operate there — no Full licence, no HAREC. It is open, lawful, and Spain's to grant.</p>
-            <p>No treaty had to be brokered; Spain simply decided to admit non-HAREC operators. A door you can open yourself needs no gatekeeper.</p>
+            <p>Not inaccurate. Not unlawful. Just unfamiliar.</p>
+            <p>"Normal," it turns out, means CEPT — the arrangement that lets Full licence holders operate abroad without asking anyone. CEPT decides who may operate under <em>its</em> terms. It has no say over whom a sovereign country chooses to admit on its own.</p>
+            <p>Spain admits UK Foundation and Intermediate holders by individual temporary authorisation, under Article 15 of its own regulations — a position its regulator confirmed in writing in November 2024. I applied. Spain said yes. Other UK holders have done the same.</p>
+            <p>Now read the RSGB's own <a href="https://rsgb.org/main/operating/licensing-novs-visitors/operating-abroad/" target="_blank" rel="noopener">Operating Abroad page</a>. It says CEPT operation <strong class="censorship-emph">supplements</strong> reciprocal licensing rather than replacing it, and that some countries recognise UK licences unilaterally. Then, in the notes at the foot of the page: <em>"Reciprocal agreements and CEPT operation do not apply to Foundation or Intermediate licences."</em></p>
+            <p>Australia's regulator disagrees. <a href="https://www.acma.gov.au/overseas-amateurs-visiting-australia" target="_blank" rel="noopener">The ACMA</a> lists the United Kingdom among the countries it has an arrangement with, naming Foundation and Intermediate. Holders can operate there for up to 365 days, signing VK before their callsign — no application, and no need even to tell the ACMA they're there.</p>
+            <p>And <a href="https://www.ofcom.org.uk/siteassets/resources/documents/manage-your-licence/amateur/amateur_radio_licence_guidance_for_licensees.pdf?v=405585" target="_blank" rel="noopener">Ofcom</a> — the body that actually issues UK licences — advises amateurs going abroad to consult the licensing authority of the country they're visiting. That is exactly what I did.</p>
+            <p>Two foreign regulators say yes. The UK regulator says ask them. The Society's guidance says don't bother — and when a member showed otherwise, it pulled the article.</p>
             <p>So here is the article they wouldn't print. The legal basis — drawn from Spain's own regulator and FediEA — is set out separately. Read it, and judge for yourself.</p>
             <a href="legal.html" class="censorship-cta">
                 <span class="censorship-cta-label">Legal Confirmation</span>
